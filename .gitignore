@@ -1,0 +1,57 @@
+# Nuxt dev/build outputs
+.output
+.nuxt
+.nitro
+dist
+.cache
+.data
+.vscode
+
+# Content cache (если используете @nuxt/content)
+.content-cache
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Misc
+.DS_Store
+.fleet
+.idea
+*.swp
+*.swo
+*~
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# Local config files
+nuxt.config.*.local
+nuxt.config.local.*
+nuxt.local.*.config
+nuxt.local.config.*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Vercel/Netlify (если будет деплой)
+.vercel
+.netlify
+
+# Build artifacts
+*.tsbuildinfo
