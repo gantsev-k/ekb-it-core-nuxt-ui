@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   ssr: true,
   devtools: { enabled: true },
 
-  css: ["./app/assets/css/main.css"],
+  css: ["~/assets/css/main.css"],
 
   modules: [
     "@nuxt/eslint",
