@@ -61,7 +61,10 @@ export default defineNuxtConfig({
 
   typescript: {
     strict: true,
-    typeCheck: true,
+  },
+
+  app: {
+    baseURL: "/",
   },
 
   fonts: {

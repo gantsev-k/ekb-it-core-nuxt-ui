@@ -1,6 +1,2 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
-
-:root {
-  --ui-primary: var(--ui-color-primary-600);
-}
