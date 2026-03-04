@@ -59,12 +59,20 @@ export default defineNuxtConfig({
     },
   },
 
+  components: [
+    {
+      path: "~/components",
+      pathPrefix: false,
+    },
+  ],
+
   typescript: {
     strict: true,
   },
 
   app: {
     baseURL: "/",
+    pageTransition: { name: "page", mode: "out-in" },
   },
 
   fonts: {
