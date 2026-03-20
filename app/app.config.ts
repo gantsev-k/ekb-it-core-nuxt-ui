@@ -32,5 +32,11 @@ export default defineAppConfig({
         root: "bg-gray-900 bg-[url(/bg.svg)] bg-no-repeat bg-center bg-cover",
       },
     },
+
+    pageCard: {
+      slots: {
+        root: "group shadow-md shadow-primary/15 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/15 transition-all",
+      },
+    },
   },
 });

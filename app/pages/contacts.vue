@@ -13,6 +13,7 @@ useSchemaOrg([
 <template>
   <UPage>
     <ContactsHero />
+    <ContactsMethods />
   </UPage>
 </template>
 
