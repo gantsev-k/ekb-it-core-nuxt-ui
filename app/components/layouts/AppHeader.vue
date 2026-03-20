@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { navItems } from "~/data/navigation";
+import { contacts } from "~/data/contacts";
 </script>
 
 <template>
@@ -13,6 +14,18 @@ import { navItems } from "~/data/navigation";
         :items="navItems"
         variant="link"
         :ui="{ linkLeadingIcon: 'hidden' }"
+      />
+    </template>
+
+    <template #right>
+      <UButton
+        v-for="contact in contacts"
+        :key="contact.label"
+        :to="contact.to"
+        :target="contact.target"
+        :icon="contact.icon"
+        :aria-label="contact.label"
+        variant="ghost"
       />
     </template>
   </UHeader>
