@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { navItems } from "~/data/navigation";
-import { contacts } from "~/data/contacts";
+const { linkItems, contactItems, groupedItems } = useNavigation();
 </script>
 
 <template>
@@ -11,22 +10,28 @@ import { contacts } from "~/data/contacts";
 
     <template #default>
       <UNavigationMenu
-        :items="navItems"
+        :items="linkItems"
         variant="link"
         :ui="{ linkLeadingIcon: 'hidden' }"
       />
     </template>
 
     <template #right>
-      <UButton
-        v-for="contact in contacts"
-        :key="contact.label"
-        :to="contact.to"
-        :target="contact.target"
-        :icon="contact.icon"
-        :aria-label="contact.label"
-        variant="ghost"
-      />
+      <div class="hidden sm:flex items-center gap-1">
+        <UButton
+          v-for="contact in contactItems"
+          :key="contact.label"
+          :to="contact.to"
+          :target="contact.target"
+          :icon="contact.icon"
+          :aria-label="contact.label"
+          variant="ghost"
+        />
+      </div>
+    </template>
+
+    <template #body>
+      <UNavigationMenu :items="groupedItems" orientation="vertical" />
     </template>
   </UHeader>
 </template>
