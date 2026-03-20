@@ -13,4 +13,5 @@ export const icons = {
   telegram: { name: "ri:telegram-line", label: "Telegram" },
   phone: { name: "material-symbols:call-outline", label: "Phone" },
   mail: { name: "material-symbols:mail-outline", label: "Mail" },
+  verified: { name: "material-symbols:verified-outline", label: "Verified" },
 } as const;

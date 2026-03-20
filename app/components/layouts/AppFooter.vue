@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { icons } from "~/data/icons";
+
 const { footerColumns } = useFooterColumns();
 </script>
 
@@ -35,6 +37,16 @@ const { footerColumns } = useFooterColumns();
           </template>
         </UFooterColumns>
       </UContainer>
+    </template>
+
+    <template #bottom>
+      <div class="flex flex-col items-center text-sm text-gray-400">
+        <div class="flex items-center gap-2">
+          <UIcon :name="icons.verified.name" class="size-4 text-primary-300" />
+          <span>{{ new Date().getFullYear() }}. ekb-it-core</span>
+        </div>
+        <p>Качество в деталях — в работе и в коде</p>
+      </div>
     </template>
   </UFooter>
 </template>
