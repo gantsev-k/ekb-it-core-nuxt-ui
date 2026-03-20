@@ -3,7 +3,15 @@ const { linkItems, contactItems, groupedItems } = useNavigation();
 </script>
 
 <template>
-  <UHeader title="EKB IT Core — Главная">
+  <UHeader
+    title="EKB IT Core — Главная"
+    mode="slideover"
+    :toggle="{
+      color: 'primary',
+      variant: 'subtle',
+      class: 'rounded-full',
+    }"
+  >
     <template #title>
       <AppLogo variant="light" />
     </template>
