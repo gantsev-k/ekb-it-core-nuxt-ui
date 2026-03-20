@@ -35,7 +35,7 @@ const { linkItems, contactItems, groupedItems } = useNavigation();
           :to="contact.to"
           :target="contact.target"
           :icon="contact.icon"
-          :aria-label="contact.label"
+          :aria-label="contact.ariaLabel"
           variant="ghost"
         />
       </div>
