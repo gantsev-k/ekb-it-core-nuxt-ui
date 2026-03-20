@@ -26,5 +26,11 @@ export default defineAppConfig({
         },
       },
     },
+
+    pageHero: {
+      slots: {
+        root: "bg-gray-900 bg-[url(/bg.svg)] bg-no-repeat bg-center bg-cover",
+      },
+    },
   },
 });
