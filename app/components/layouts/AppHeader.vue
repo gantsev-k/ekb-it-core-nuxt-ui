@@ -17,11 +17,14 @@ const { linkItems, contactItems, groupedItems } = useNavigation();
     </template>
 
     <template #default>
-      <UNavigationMenu
-        :items="linkItems"
-        variant="link"
-        :ui="{ linkLeadingIcon: 'hidden' }"
-      />
+      <nav aria-label="Основное меню">
+        <UNavigationMenu
+          :items="linkItems"
+          as="div"
+          variant="link"
+          :ui="{ linkLeadingIcon: 'hidden' }"
+        />
+      </nav>
     </template>
 
     <template #right>
@@ -39,7 +42,9 @@ const { linkItems, contactItems, groupedItems } = useNavigation();
     </template>
 
     <template #body>
-      <UNavigationMenu :items="groupedItems" orientation="vertical" />
+      <nav aria-label="Мобильное меню">
+        <UNavigationMenu :items="groupedItems" orientation="vertical" />
+      </nav>
     </template>
   </UHeader>
 </template>
