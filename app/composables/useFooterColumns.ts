@@ -6,7 +6,7 @@ import { contacts } from "~/data/contacts";
 export function useFooterColumns() {
   const footerColumns = shallowRef<FooterColumn[]>([
     {
-      label: "Разделы",
+      label: "Навигация",
       children: navItems.map((item) => ({ ...item })),
     },
     {
