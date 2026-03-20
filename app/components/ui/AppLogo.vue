@@ -5,22 +5,33 @@ const props = withDefaults(defineProps<{ variant?: "light" | "dark" }>(), {
   variant: "light",
 });
 
+const baseColorClass = computed(() =>
+  props.variant === "dark" ? "text-primary-400" : "text-primary",
+);
+
 const textColorClass = computed(() =>
   props.variant === "dark" ? "text-white" : "text-black",
+);
+
+const hoverColorClass = computed(() =>
+  props.variant === "dark"
+    ? "group-hover:text-primary-400"
+    : "group-hover:text-primary",
 );
 </script>
 
 <template>
   <div class="group flex items-center gap-2">
-    <div class="flex items-center justify-center bg-primary p-1 rounded">
+    <div class="flex items-center justify-center p-1 rounded bg-primary">
       <UIcon :name="icons.computer.name" class="size-6 text-white" />
     </div>
-    <div class="flex items-center text-primary text-lg font-bold">
+    <div :class="[baseColorClass, 'flex items-center text-lg font-bold']">
       ekb
       <div
         :class="[
           textColorClass,
-          'group-hover:text-primary transition-colors duration-200',
+          hoverColorClass,
+          'transition-colors duration-200',
         ]"
       >
         -it-core
@@ -28,5 +39,3 @@ const textColorClass = computed(() =>
     </div>
   </div>
 </template>
-
-<style lang="css" scoped></style>
