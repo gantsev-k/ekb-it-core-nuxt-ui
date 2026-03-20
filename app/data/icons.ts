@@ -5,4 +5,9 @@ export interface Icon {
 
 export const icons = {
   computer: { name: "material-symbols:computer-outline", label: "Computer" },
+  home: { name: "material-symbols:home-outline", label: "Home" },
+  wrench: { name: "material-symbols:tools-wrench-outline", label: "Wrench" },
+  person: { name: "material-symbols:person-outline", label: "Person" },
+  contact: { name: "material-symbols:contact-page-outline", label: "Contact" },
+  book: { name: "material-symbols:book-outline", label: "Book" },
 } as const;
