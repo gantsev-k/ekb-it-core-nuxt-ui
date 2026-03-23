@@ -14,6 +14,7 @@ useSchemaOrg([
   <UPage>
     <AboutHero />
     <AboutTimeline />
+    <AboutApproach />
   </UPage>
 </template>
 
