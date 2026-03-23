@@ -14,6 +14,7 @@ useSchemaOrg([
   <UPage>
     <ContactsHero />
     <ContactsMethods />
+    <ContactConditions />
   </UPage>
 </template>
 
