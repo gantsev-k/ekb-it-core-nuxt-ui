@@ -33,17 +33,17 @@ const workBenefits = [
 </script>
 
 <template>
-  <UPageSection>
+  <UPageSection :ui="{ root: 'bg-gray-50' }">
     <template #body>
       <UAlert
         :icon="icons.info.name"
         title="Важно знать"
         description="95% услуг — работа с ПО. Аппаратный ремонт не выполняю, но помогу с диагностикой и подбором комплектующих."
-        variant="outline"
+        variant="subtle"
         class="mb-8"
       />
 
-      <UPageGrid>
+      <UPageGrid as="ul">
         <UPageCard
           v-for="(benefit, index) in workBenefits"
           :key="benefit.name"
