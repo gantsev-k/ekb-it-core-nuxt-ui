@@ -16,6 +16,7 @@ useSchemaOrg([
     <AboutTimeline />
     <AboutApproach />
     <AboutSpecialization />
+    <AboutCta />
   </UPage>
 </template>
 
