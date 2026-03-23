@@ -14,6 +14,7 @@ export const icons = {
   phone: { name: "material-symbols:call-outline", label: "Phone" },
   mail: { name: "material-symbols:mail-outline", label: "Mail" },
   verified: { name: "material-symbols:verified-outline", label: "Verified" },
+  info: { name: "material-symbols:info-outline", label: "Info" },
   currencyRuble: {
     name: "material-symbols:currency-ruble",
     label: "CurrencyRuble",
