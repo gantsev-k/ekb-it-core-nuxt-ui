@@ -24,4 +24,6 @@ export const icons = {
     name: "material-symbols:arrow-forward",
     label: "ArrowForward",
   },
+  chart: { name: "material-symbols:insert-chart-outline", label: "Chart" },
+  code: { name: "material-symbols:code-blocks-outline", label: "Code" },
 } as const;

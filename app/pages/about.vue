@@ -13,6 +13,7 @@ useSchemaOrg([
 <template>
   <UPage>
     <AboutHero />
+    <AboutTimeline />
   </UPage>
 </template>
 
