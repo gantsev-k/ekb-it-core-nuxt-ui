@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { footer } from "#build/ui";
+
 const { data: posts } = await useAsyncData("blog-posts", () =>
   queryCollection("blog").all(),
 );
@@ -32,10 +34,16 @@ const paginatedPosts = computed(() => {
           :date="post.date"
           :image="post.image"
           :to="post.path"
+          :ui="{ footer: 'flex items-center p-5' }"
         >
-          <template #badge>
+          <template #footer>
             <div class="flex gap-2">
-              <UBadge v-for="tag in post.tags" :key="tag" :label="tag" />
+              <UBadge
+                v-for="tag in post.tags"
+                :key="tag"
+                :label="tag"
+                size="sm"
+              />
             </div>
           </template>
         </UBlogPost>
