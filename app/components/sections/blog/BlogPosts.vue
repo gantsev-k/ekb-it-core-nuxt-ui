@@ -4,7 +4,7 @@ const { data: posts } = await useAsyncData("blog-posts", () =>
 );
 
 const currentPage = ref(1);
-const itemsPerPage = 2;
+const itemsPerPage = 6;
 
 const publishedPosts = computed(() =>
   (posts.value ?? []).filter((post) => post.published),
