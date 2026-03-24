@@ -13,6 +13,7 @@ useSchemaOrg([
 <template>
   <UPage>
     <BlogHero />
+    <BlogPosts />
   </UPage>
 </template>
 
