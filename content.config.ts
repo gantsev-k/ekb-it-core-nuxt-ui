@@ -8,6 +8,7 @@ export default defineContentConfig({
       source: "blog/**/*.md",
       schema: z.object({
         title: z.string(),
+        breadcrumbTitle: z.string().optional(),
         description: z.string(),
         date: z.string(),
         image: z.string().optional(),

@@ -2,7 +2,7 @@
 const breadcrumbItems = computed(() => [
   { label: "Главная", to: "/" },
   { label: "Блог", to: "/blog" },
-  { label: post.value?.title, to: route.path },
+  { label: post.value?.breadcrumbTitle || post.value?.title, to: route.path },
 ]);
 
 const route = useRoute();
