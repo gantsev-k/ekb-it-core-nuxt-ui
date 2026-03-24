@@ -5,6 +5,7 @@ date: 2026-03-20
 image: "https://placehold.jp/3d4070/ffffff/800x600.png?text=Speed"
 tags: ["Оптимизация", "Windows"]
 published: true
+featured: true
 ---
 
 Содержание статьи про ускорение Windows будет здесь.

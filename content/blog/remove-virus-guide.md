@@ -5,6 +5,7 @@ date: 2026-03-24
 image: "https://placehold.jp/3d4070/ffffff/800x600.png?text=Antivirus"
 tags: ["Антивирус", "Windows"]
 published: true
+featured: true
 ---
 
 Содержание статьи про удаление вирусов будет здесь.

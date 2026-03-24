@@ -13,6 +13,7 @@ export default defineContentConfig({
         image: z.string().optional(),
         tags: z.array(z.string()),
         published: z.boolean().default(true),
+        featured: z.boolean().default(false),
       }),
     }),
   },

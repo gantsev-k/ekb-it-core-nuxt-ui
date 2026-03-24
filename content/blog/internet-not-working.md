@@ -5,6 +5,7 @@ date: 2026-03-15
 image: "https://placehold.jp/3d4070/ffffff/800x600.png?text=Network"
 tags: ["Сети", "Интернет"]
 published: true
+featured: true
 ---
 
 Содержание статьи про диагностику интернета будет здесь.
