@@ -49,8 +49,7 @@ const paginatedPosts = computed(() => {
         :total="publishedPosts.length"
         :items-per-page="itemsPerPage"
         :sibling-count="1"
-        show-edges
-        size="md"
+        aria-label="Навигация по страницам блога"
       />
     </template>
   </UPageSection>
