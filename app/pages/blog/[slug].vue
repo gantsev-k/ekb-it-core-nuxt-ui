@@ -1,4 +1,10 @@
 <script setup lang="ts">
+const breadcrumbItems = computed(() => [
+  { label: "Главная", to: "/" },
+  { label: "Блог", to: "/blog" },
+  { label: post.value?.title, to: route.path },
+]);
+
 const route = useRoute();
 
 const { data: post } = await useAsyncData(`blog-${route.params.slug}`, () =>
@@ -33,7 +39,10 @@ useSeoMeta({
     </UPageHeader>
 
     <UPageBody>
-      <ContentRenderer :value="post!" />
+      <UContainer>
+        <UBreadcrumb :items="breadcrumbItems" />
+        <ContentRenderer :value="post!" />
+      </UContainer>
     </UPageBody>
   </UPage>
 </template>
