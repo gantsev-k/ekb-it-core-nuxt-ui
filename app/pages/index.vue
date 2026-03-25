@@ -13,6 +13,7 @@ useSchemaOrg([
 <template>
   <UPage>
     <HomeHero />
+    <HomeAdvantages />
     <HomeFeaturedPosts />
   </UPage>
 </template>

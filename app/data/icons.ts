@@ -26,4 +26,5 @@ export const icons = {
   },
   chart: { name: "material-symbols:insert-chart-outline", label: "Chart" },
   code: { name: "material-symbols:code-blocks-outline", label: "Code" },
+  handshake: { name: "material-symbols:handshake-outline", label: "Handshake" },
 } as const;
