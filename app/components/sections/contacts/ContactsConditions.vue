@@ -8,7 +8,7 @@ const workBenefits = [
     title: "Как вам удобнее",
     description:
       "Большинство проблем решаю онлайн через AnyDesk/TeamViewer. Если нужно — приеду по Екатеринбургу.",
-    link: "/blog",
+    link: "/blog/remote-support",
     linkText: "Как работает удалёнка? Читайте в блоге",
   },
   {
