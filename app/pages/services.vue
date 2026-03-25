@@ -12,7 +12,7 @@ useSchemaOrg([
 
 <template>
   <UPage>
-    <h1>Services page</h1>
+    <ServicesHero />
   </UPage>
 </template>
 
