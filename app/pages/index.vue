@@ -15,6 +15,7 @@ useSchemaOrg([
     <HomeHero />
     <HomeAdvantages />
     <HomeFeaturedPosts />
+    <HomeCta />
   </UPage>
 </template>
 
