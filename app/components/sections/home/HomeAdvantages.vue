@@ -37,6 +37,7 @@ const advantages = [
       <UPageFeature
         v-for="(item, index) in advantages"
         :key="index"
+        as="li"
         :ui="{ root: 'text-center' }"
         :icon="item.icon"
         :title="item.title"
