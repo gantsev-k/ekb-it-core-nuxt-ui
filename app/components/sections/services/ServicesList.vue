@@ -6,7 +6,6 @@ type PriceType = "fixed" | "hourly" | "negotiable";
 
 interface ServiceItem extends AccordionItem {
   label: string;
-  slot: string;
   icon: string;
   price: number | null;
   priceType: PriceType;
@@ -16,7 +15,6 @@ interface ServiceItem extends AccordionItem {
 const items = ref<ServiceItem[]>([
   {
     label: "Установка Windows",
-    slot: "service",
     icon: icons.computer.name,
     price: 1500,
     priceType: "fixed",
@@ -25,7 +23,6 @@ const items = ref<ServiceItem[]>([
   },
   {
     label: "Установка Linux",
-    slot: "service",
     icon: icons.code.name,
     price: 1500,
     priceType: "fixed",
@@ -34,7 +31,6 @@ const items = ref<ServiceItem[]>([
   },
   {
     label: "Удаление вирусов и вредоносного ПО",
-    slot: "service",
     icon: icons.shield.name,
     price: 1000,
     priceType: "fixed",
@@ -43,7 +39,6 @@ const items = ref<ServiceItem[]>([
   },
   {
     label: "Удаленная поддержка и консультация",
-    slot: "service",
     icon: icons.headset.name,
     price: 500,
     priceType: "hourly",
@@ -52,7 +47,6 @@ const items = ref<ServiceItem[]>([
   },
   {
     label: "Настройка сервера",
-    slot: "service",
     icon: icons.code.name,
     price: null,
     priceType: "negotiable",
@@ -77,11 +71,22 @@ const formatPrice = (price: number | null, type: PriceType) => {
       сети. Честно, прозрачно, с гарантией результата. Работаю очно и удалённо.
     </template>
 
-    <UAccordion :items="items">
-      <template #trailing="{ item }">
-        <span v-if="item.priceType" class="flex items-center gap-2 text-muted">
-          <p>{{ formatPrice(item.price, item.priceType) }}</p>
-        </span>
+    <UAccordion
+      :items="items"
+      :unmount-on-hide="false"
+      :ui="{ trigger: 'items-start' }"
+    >
+      <template #default="{ item }">
+        <div class="flex flex-col items-start">
+          <span>{{ item.label }}</span>
+          <span class="text-primary">
+            {{ formatPrice(item.price, item.priceType) }}
+          </span>
+        </div>
+      </template>
+
+      <template #body="{ item }">
+        {{ item.content }}
       </template>
     </UAccordion>
   </UPageSection>
