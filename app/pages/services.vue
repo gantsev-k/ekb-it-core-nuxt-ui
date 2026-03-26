@@ -13,6 +13,7 @@ useSchemaOrg([
 <template>
   <UPage>
     <ServicesHero />
+    <ServicesList />
     <ServicesCta />
   </UPage>
 </template>

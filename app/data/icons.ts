@@ -31,4 +31,6 @@ export const icons = {
     name: "material-symbols:arrow-downward",
     label: "ArrowDownward",
   },
+  shield: { name: "material-symbols:shield-outline", label: "Shield" },
+  headset: { name: "material-symbols:headset-mic-outline", label: "Headset" },
 } as const;
