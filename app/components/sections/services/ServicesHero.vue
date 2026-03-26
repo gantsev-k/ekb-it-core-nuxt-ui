@@ -11,14 +11,15 @@ const contactButton = computed(() =>
   <UPageHero>
     <template #title>
       <span class="text-white">
-        <span class="text-primary">Услуги по настройке ПК</span> очно в
-        Екатеринбурге и удалённо
+        <span class="text-primary">Услуги по настройке ПК</span> —
+        <span class="sr-only">в Екатеринбурге</span>
+        очно и удалённо
       </span>
     </template>
 
     <template #description>
-      Настройка Windows/Linux, удаление вирусов, решение проблем с софтом.
-      Удалённо или с выездом. Честно, просто, цена до начала работ.
+      Екатеринбург. Настройка Windows/Linux, удаление вирусов, решение проблем с
+      софтом. Удалённо или с выездом. Честно, просто, цена до начала работ.
     </template>
 
     <template #links>
