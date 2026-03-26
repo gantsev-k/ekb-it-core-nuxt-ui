@@ -48,6 +48,7 @@ const faqItems = ref<AccordionItem[]>([
       :ui="{
         leadingIcon: 'size-5 text-primary',
       }"
+      :unmount-on-hide="false"
     />
   </UPageSection>
 </template>
