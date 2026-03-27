@@ -17,5 +17,31 @@ export default defineContentConfig({
         featured: z.boolean().default(false),
       }),
     }),
+    services: defineCollection({
+      type: "data",
+      source: "services/*.yml",
+      schema: z.object({
+        title: z.string(),
+        slug: z.string(),
+        icon: z.string(),
+        shortDescription: z.string(),
+        price: z.number().nullable(),
+        priceType: z.enum(["fixed", "hourly", "negotiable"]),
+        fullDescription: z.string(),
+        included: z.array(
+          z.object({
+            name: z.string(),
+            price: z.number(),
+          }),
+        ),
+        extras: z.array(
+          z.object({
+            name: z.string(),
+            price: z.number(),
+          }),
+        ),
+        relatedPosts: z.array(z.string()),
+      }),
+    }),
   },
 });
