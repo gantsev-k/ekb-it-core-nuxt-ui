@@ -3,7 +3,7 @@ import { icons } from "~/data/icons";
 </script>
 
 <template>
-  <UPageSection>
+  <UPageSection id="services">
     <template #title>Компьютерная помощь в Екатеринбурге</template>
 
     <template #description>
